@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,48 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EndTermTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name:" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GDA-xX-BCR">
+                                <rect key="frame" x="100" y="431" width="214" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HJh-DT-C4f">
+                                <rect key="frame" x="100" y="485" width="214" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYP-Og-VHQ">
+                                <rect key="frame" x="184" y="577" width="47" height="35"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GDA-xX-BCR" secondAttribute="trailing" constant="100" id="2Pe-jS-SDJ"/>
+                            <constraint firstItem="HJh-DT-C4f" firstAttribute="leading" secondItem="GDA-xX-BCR" secondAttribute="leading" id="BiO-EV-KYK"/>
+                            <constraint firstItem="HJh-DT-C4f" firstAttribute="trailing" secondItem="GDA-xX-BCR" secondAttribute="trailing" id="NJJ-5c-ahC"/>
+                            <constraint firstItem="GDA-xX-BCR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NcC-Of-EzH"/>
+                            <constraint firstItem="HJh-DT-C4f" firstAttribute="top" secondItem="GDA-xX-BCR" secondAttribute="bottom" constant="20" id="Vnb-Al-UZs"/>
+                            <constraint firstItem="HJh-DT-C4f" firstAttribute="trailing" secondItem="GDA-xX-BCR" secondAttribute="trailing" id="Vru-fE-kae"/>
+                            <constraint firstItem="GDA-xX-BCR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ytm-Kq-XEQ"/>
+                            <constraint firstItem="GDA-xX-BCR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="fK4-Bd-JPb"/>
+                            <constraint firstItem="HJh-DT-C4f" firstAttribute="leading" secondItem="GDA-xX-BCR" secondAttribute="leading" id="pfR-mB-oi6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZYP-Og-VHQ" secondAttribute="bottom" constant="250" id="xAn-Tw-VdZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-386" y="94"/>
         </scene>
     </scenes>
 </document>
