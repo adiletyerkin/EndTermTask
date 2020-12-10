@@ -1,0 +1,6 @@
+framework module Pods_EndTermTask {
+  umbrella header "Pods-EndTermTask-umbrella.h"
+
+  export *
+  module * { export * }
+}
