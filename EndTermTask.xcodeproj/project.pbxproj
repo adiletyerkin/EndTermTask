@@ -16,6 +16,11 @@
 		DA2EBEE72582691400D207EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2EBEE52582691400D207EE /* LaunchScreen.storyboard */; };
 		DAD822B5258364CC005688D9 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD822B4258364CC005688D9 /* TaskViewController.swift */; };
 		DAD822B725836BC1005688D9 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD822B625836BC1005688D9 /* FriendsViewController.swift */; };
+		DAD822B92583A81A005688D9 /* Modals.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD822B82583A81A005688D9 /* Modals.swift */; };
+		DAD822BB2583AA59005688D9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD822BA2583AA59005688D9 /* SecondViewController.swift */; };
+		DAD822BE2583AAA4005688D9 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD822BC2583AAA4005688D9 /* CollectionViewCell.swift */; };
+		DAD822BF2583AAA4005688D9 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD822BD2583AAA4005688D9 /* CollectionViewCell.xib */; };
+		DAD822C12583AD9D005688D9 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD822C02583AD9D005688D9 /* DiaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 		DA2EBEE82582691400D207EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAD822B4258364CC005688D9 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		DAD822B625836BC1005688D9 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		DAD822B82583A81A005688D9 /* Modals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modals.swift; sourceTree = "<group>"; };
+		DAD822BA2583AA59005688D9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DAD822BC2583AAA4005688D9 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		DAD822BD2583AAA4005688D9 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		DAD822C02583AD9D005688D9 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		E787FE854F87E3E09A88E1B9 /* Pods_EndTermTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EndTermTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,8 +88,13 @@
 			children = (
 				DA2EBEDA2582691100D207EE /* AppDelegate.swift */,
 				DA2EBEDC2582691100D207EE /* SceneDelegate.swift */,
+				DAD822B82583A81A005688D9 /* Modals.swift */,
+				DAD822BA2583AA59005688D9 /* SecondViewController.swift */,
+				DAD822BC2583AAA4005688D9 /* CollectionViewCell.swift */,
+				DAD822BD2583AAA4005688D9 /* CollectionViewCell.xib */,
 				DA2EBEDE2582691100D207EE /* ViewController.swift */,
 				DA2EBEE02582691100D207EE /* Main.storyboard */,
+				DAD822C02583AD9D005688D9 /* DiaryViewController.swift */,
 				DAD822B625836BC1005688D9 /* FriendsViewController.swift */,
 				DAD822B4258364CC005688D9 /* TaskViewController.swift */,
 				DA2EBEE32582691400D207EE /* Assets.xcassets */,
@@ -159,6 +174,7 @@
 			files = (
 				DA2EBEE72582691400D207EE /* LaunchScreen.storyboard in Resources */,
 				DA2EBEE42582691400D207EE /* Assets.xcassets in Resources */,
+				DAD822BF2583AAA4005688D9 /* CollectionViewCell.xib in Resources */,
 				DA2EBEE22582691100D207EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,8 +229,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2EBEDF2582691100D207EE /* ViewController.swift in Sources */,
+				DAD822C12583AD9D005688D9 /* DiaryViewController.swift in Sources */,
+				DAD822B92583A81A005688D9 /* Modals.swift in Sources */,
+				DAD822BE2583AAA4005688D9 /* CollectionViewCell.swift in Sources */,
 				DA2EBEDB2582691100D207EE /* AppDelegate.swift in Sources */,
 				DA2EBEDD2582691100D207EE /* SceneDelegate.swift in Sources */,
+				DAD822BB2583AA59005688D9 /* SecondViewController.swift in Sources */,
 				DAD822B725836BC1005688D9 /* FriendsViewController.swift in Sources */,
 				DAD822B5258364CC005688D9 /* TaskViewController.swift in Sources */,
 			);

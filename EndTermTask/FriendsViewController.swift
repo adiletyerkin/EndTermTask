@@ -10,6 +10,7 @@ import UIKit
 import RealmSwift
 var friends: Results<Friends>!
 var realm2 = try! Realm()
+var photodata: Data? = nil
 class FriendsViewController: UIViewController,UITableViewDelegate, UITableViewDataSource  {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -24,6 +25,7 @@ class FriendsViewController: UIViewController,UITableViewDelegate, UITableViewDa
         cell.addres.text = friends[indexPath.row].addres
         cell.date.text = friends[indexPath.row].date
         cell.phone.text = friends[indexPath.row].phone
+//        cell.photo.image = friends[indexPath.row].UIImage(imageName)
         
         return cell
     }
@@ -78,7 +80,7 @@ class Friends: Object {
     @objc dynamic var phone: String = ""
     @objc dynamic var addres: String = ""
     @objc dynamic var date: String = ""
-//    @objc dynamic var imageName : UIImage
+    @objc dynamic var imageName = ""
     
     
 }
@@ -94,15 +96,17 @@ class FriendsSetVC: UIViewController, UINavigationControllerDelegate, UIImagePic
         @IBOutlet weak var phoneText: UILabel!
         @IBOutlet weak var photoT: UIImageView!
     
+   
+    
     @IBAction func saveFriends(_ sender: Any) {
-
+        
             if let taskdone = incomingFriends{
                 try! realm.write{
                     taskdone.name = nameText.text!
                     taskdone.addres = addresText.text!
                     taskdone.date = dateText.text!
                     taskdone.phone = phoneText.text!
-//                    taskdone.imageName = photoT.image
+//                    taskdone.imageName =
                     
                 }
             }
@@ -113,6 +117,8 @@ class FriendsSetVC: UIViewController, UINavigationControllerDelegate, UIImagePic
             myNote.addres = addresText.text!
             myNote.date = dateText.text!
             myNote.phone = phoneText.text!
+               // myNote.imageName = photodata.
+                
                 
                 try! realm.write {
                     realm.add(myNote)
@@ -131,7 +137,8 @@ class FriendsSetVC: UIViewController, UINavigationControllerDelegate, UIImagePic
                 addresText.text = taskdone.addres
                 dateText.text = taskdone.date
                 phoneText.text = taskdone.phone
-        
+              //  photoT = taskdone.picture
+      
             }
         }
     
@@ -170,8 +177,13 @@ class FriendsSetVC: UIViewController, UINavigationControllerDelegate, UIImagePic
           let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
           photoT.image = image
           picker.dismiss(animated: true, completion: nil)
-          
+        
+//        guard let photodata = image.pngData() else{
+//            return
+//        }
+
       }
+    
       
       func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
           picker.dismiss(animated: true, completion: nil)
