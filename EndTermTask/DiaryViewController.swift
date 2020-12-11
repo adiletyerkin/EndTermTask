@@ -43,14 +43,19 @@ class DiaryViewController: UIViewController, UICollectionViewDelegate, UICollect
         func reload(){
              diaryTable.reloadData()
          }
-//        func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//            if editingStyle == .delete{
-//                try! realm.write {
-//                    realm.delete(notes[indexPath.row])
-//                }
-//                reload()
-//            }
-//        }
+    
+    
+
+     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+       if !isEditing {
+            try! realm.write {
+                realm.delete(notes[indexPath.row])
+            }
+            reload()
+        }
+    }
+    
+    
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

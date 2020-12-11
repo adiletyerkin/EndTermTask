@@ -26,6 +26,11 @@ class FriendsViewController: UIViewController,UITableViewDelegate, UITableViewDa
         cell.date.text = friends[indexPath.row].date
         cell.phone.text = friends[indexPath.row].phone
 //        cell.photo.image = friends[indexPath.row].UIImage(imageName)
+            cell.backgroundColor = UIColor.white
+               cell.layer.borderColor = UIColor.black.cgColor
+               cell.layer.borderWidth = 1
+               cell.layer.cornerRadius = 12
+               cell.clipsToBounds = true
         
         return cell
     }
@@ -33,6 +38,7 @@ class FriendsViewController: UIViewController,UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 166
     }
+ 
     
     
     @IBOutlet weak var FriendsTable: UITableView!
@@ -59,7 +65,7 @@ class FriendsViewController: UIViewController,UITableViewDelegate, UITableViewDa
        func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
            if editingStyle == .delete{
                try! realm2.write {
-                   realm2.delete(notes[indexPath.row])
+                   realm2.delete(friends[indexPath.row])
                }
                reload()
            }
@@ -211,4 +217,3 @@ class friendsViewCell: UITableViewCell  {
     @IBOutlet weak var phone: UILabel!
     
 }
-
