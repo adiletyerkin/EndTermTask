@@ -131,4 +131,3 @@ class Diaries: Object {
     @objc dynamic var time : String = ""
     @objc dynamic var textdiary : String = ""
 }
-

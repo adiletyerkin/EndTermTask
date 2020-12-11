@@ -38,8 +38,7 @@ class FriendsViewController: UIViewController,UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 166
     }
- 
-    
+
     
     @IBOutlet weak var FriendsTable: UITableView!
     
@@ -216,4 +215,5 @@ class friendsViewCell: UITableViewCell  {
     @IBOutlet weak var addres: UILabel!
     @IBOutlet weak var phone: UILabel!
     
+
 }
