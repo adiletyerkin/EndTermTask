@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		DA2EBEE22582691100D207EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2EBEE02582691100D207EE /* Main.storyboard */; };
 		DA2EBEE42582691400D207EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2EBEE32582691400D207EE /* Assets.xcassets */; };
 		DA2EBEE72582691400D207EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2EBEE52582691400D207EE /* LaunchScreen.storyboard */; };
+		DAD822B5258364CC005688D9 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD822B4258364CC005688D9 /* TaskViewController.swift */; };
+		DAD822B725836BC1005688D9 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD822B625836BC1005688D9 /* FriendsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		DA2EBEE32582691400D207EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA2EBEE62582691400D207EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA2EBEE82582691400D207EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAD822B4258364CC005688D9 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		DAD822B625836BC1005688D9 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		E787FE854F87E3E09A88E1B9 /* Pods_EndTermTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EndTermTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -48,7 +52,6 @@
 				06F911193A313A73A8A50003 /* Pods-EndTermTask.debug.xcconfig */,
 				4EF9A359205D1FE0F2713D7C /* Pods-EndTermTask.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -77,6 +80,8 @@
 				DA2EBEDC2582691100D207EE /* SceneDelegate.swift */,
 				DA2EBEDE2582691100D207EE /* ViewController.swift */,
 				DA2EBEE02582691100D207EE /* Main.storyboard */,
+				DAD822B625836BC1005688D9 /* FriendsViewController.swift */,
+				DAD822B4258364CC005688D9 /* TaskViewController.swift */,
 				DA2EBEE32582691400D207EE /* Assets.xcassets */,
 				DA2EBEE52582691400D207EE /* LaunchScreen.storyboard */,
 				DA2EBEE82582691400D207EE /* Info.plist */,
@@ -210,6 +215,8 @@
 				DA2EBEDF2582691100D207EE /* ViewController.swift in Sources */,
 				DA2EBEDB2582691100D207EE /* AppDelegate.swift in Sources */,
 				DA2EBEDD2582691100D207EE /* SceneDelegate.swift in Sources */,
+				DAD822B725836BC1005688D9 /* FriendsViewController.swift in Sources */,
+				DAD822B5258364CC005688D9 /* TaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
