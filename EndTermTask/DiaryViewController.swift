@@ -48,8 +48,8 @@ class DiaryViewController: UIViewController, UICollectionViewDelegate, UICollect
 
      func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
        if !isEditing {
-            try! realm.write {
-                realm.delete(notes[indexPath.row])
+            try! realm3.write {
+                realm3.delete(notes[indexPath.row])
             }
             reload()
         }
@@ -76,7 +76,10 @@ class DiarySet: UIViewController {
     
     @IBOutlet weak var datedset: UITextField!
     @IBOutlet weak var themD: UITextField!
-    @IBOutlet weak var insertD: UITextField!
+    // @IBOutlet weak var insertD: UITextField!
+    @IBOutlet var insertD: UITextView!
+    
+    
   var incomingTask: Diaries? = nil
 
     @IBAction func saveD(_ sender: Any) {

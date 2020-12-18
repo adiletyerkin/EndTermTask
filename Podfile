@@ -7,5 +7,6 @@ target 'EndTermTask' do
 
   # Pods for EndTermTask
   pod 'RealmSwift'
+	pod 'Parse'
 
 end

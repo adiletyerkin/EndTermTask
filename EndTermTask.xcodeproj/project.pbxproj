@@ -14,6 +14,7 @@
 		DA2EBEE22582691100D207EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2EBEE02582691100D207EE /* Main.storyboard */; };
 		DA2EBEE42582691400D207EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2EBEE32582691400D207EE /* Assets.xcassets */; };
 		DA2EBEE72582691400D207EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2EBEE52582691400D207EE /* LaunchScreen.storyboard */; };
+		DA9A2875258CB13800ECBAF5 /* weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A2874258CB13800ECBAF5 /* weather.swift */; };
 		DAD822B5258364CC005688D9 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD822B4258364CC005688D9 /* TaskViewController.swift */; };
 		DAD822B725836BC1005688D9 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD822B625836BC1005688D9 /* FriendsViewController.swift */; };
 		DAD822B92583A81A005688D9 /* Modals.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD822B82583A81A005688D9 /* Modals.swift */; };
@@ -34,6 +35,7 @@
 		DA2EBEE32582691400D207EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA2EBEE62582691400D207EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA2EBEE82582691400D207EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA9A2874258CB13800ECBAF5 /* weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather.swift; sourceTree = "<group>"; };
 		DAD822B4258364CC005688D9 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		DAD822B625836BC1005688D9 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		DAD822B82583A81A005688D9 /* Modals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modals.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				DAD822BC2583AAA4005688D9 /* CollectionViewCell.swift */,
 				DAD822BD2583AAA4005688D9 /* CollectionViewCell.xib */,
 				DA2EBEDE2582691100D207EE /* ViewController.swift */,
+				DA9A2874258CB13800ECBAF5 /* weather.swift */,
 				DA2EBEE02582691100D207EE /* Main.storyboard */,
 				DAD822C02583AD9D005688D9 /* DiaryViewController.swift */,
 				DAD822B625836BC1005688D9 /* FriendsViewController.swift */,
@@ -228,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9A2875258CB13800ECBAF5 /* weather.swift in Sources */,
 				DA2EBEDF2582691100D207EE /* ViewController.swift in Sources */,
 				DAD822C12583AD9D005688D9 /* DiaryViewController.swift in Sources */,
 				DAD822B92583A81A005688D9 /* Modals.swift in Sources */,
