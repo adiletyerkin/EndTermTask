@@ -1,4 +1,9 @@
 PODS:
+  - Bolts/Tasks (1.9.1)
+  - Parse (1.19.1):
+    - Parse/Core (= 1.19.1)
+  - Parse/Core (1.19.1):
+    - Bolts/Tasks (= 1.9.1)
   - Realm (10.1.2):
     - Realm/Headers (= 10.1.2)
   - Realm/Headers (10.1.2)
@@ -6,17 +11,22 @@ PODS:
     - Realm (= 10.1.2)
 
 DEPENDENCIES:
+  - Parse
   - RealmSwift
 
 SPEC REPOS:
   trunk:
+    - Bolts
+    - Parse
     - Realm
     - RealmSwift
 
 SPEC CHECKSUMS:
+  Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
+  Parse: e40fdb9c7d665823b7fe9865949cac9a53eb2ce7
   Realm: 031fdd4be7094d01b43af1a5e49766ab644bb800
   RealmSwift: 43cf2e114baa9d17d34eb81e7d0def31f21cd444
 
-PODFILE CHECKSUM: 766ac7415e2acc663a9d83c1e237cdcd9aecda4b
+PODFILE CHECKSUM: ef91dad78ad3840b457e119feae71944bc5ff8b0
 
 COCOAPODS: 1.10.0
