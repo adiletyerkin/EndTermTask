@@ -28,3 +28,19 @@ class Member : Decodable{
 var name : String?
 var slug : String?
 }
+
+struct MovieResponse: Decodable{
+    let results : [Movie]
+    
+}
+
+struct Movie: Decodable{
+    let id: Int
+    let title: String
+    let vote_average : Double
+    let overview : String
+    let release_date : String
+    let backdrop_path : String?
+    let poster_path : String?
+    
+}

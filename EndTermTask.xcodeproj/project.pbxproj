@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C69EACD6F3CA9E92DD554BDE /* Pods_EndTermTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E787FE854F87E3E09A88E1B9 /* Pods_EndTermTask.framework */; };
+		DA2B902B258FCBEE00E97C8E /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B902A258FCBEE00E97C8E /* MovieService.swift */; };
 		DA2EBEDB2582691100D207EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2EBEDA2582691100D207EE /* AppDelegate.swift */; };
 		DA2EBEDD2582691100D207EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2EBEDC2582691100D207EE /* SceneDelegate.swift */; };
 		DA2EBEDF2582691100D207EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2EBEDE2582691100D207EE /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		06F911193A313A73A8A50003 /* Pods-EndTermTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EndTermTask.debug.xcconfig"; path = "Target Support Files/Pods-EndTermTask/Pods-EndTermTask.debug.xcconfig"; sourceTree = "<group>"; };
 		4EF9A359205D1FE0F2713D7C /* Pods-EndTermTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EndTermTask.release.xcconfig"; path = "Target Support Files/Pods-EndTermTask/Pods-EndTermTask.release.xcconfig"; sourceTree = "<group>"; };
+		DA2B902A258FCBEE00E97C8E /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		DA2EBED72582691100D207EE /* EndTermTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EndTermTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2EBEDA2582691100D207EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA2EBEDC2582691100D207EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				DAD822B82583A81A005688D9 /* Modals.swift */,
 				DAD822BA2583AA59005688D9 /* SecondViewController.swift */,
 				DAD822BC2583AAA4005688D9 /* CollectionViewCell.swift */,
+				DA2B902A258FCBEE00E97C8E /* MovieService.swift */,
 				DA9A2882258CECEC00ECBAF5 /* NavExViewController.swift */,
 				DAD822BD2583AAA4005688D9 /* CollectionViewCell.xib */,
 				DA9A2880258CE91F00ECBAF5 /* HomeViewController.swift */,
@@ -260,6 +263,7 @@
 				DAD822BB2583AA59005688D9 /* SecondViewController.swift in Sources */,
 				DAD822B725836BC1005688D9 /* FriendsViewController.swift in Sources */,
 				DAD822B5258364CC005688D9 /* TaskViewController.swift in Sources */,
+				DA2B902B258FCBEE00E97C8E /* MovieService.swift in Sources */,
 				DA9A2877258CD96200ECBAF5 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

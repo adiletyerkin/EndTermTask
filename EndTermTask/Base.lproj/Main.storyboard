@@ -207,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="42D-A1-j6K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="505.79710144927537" y="875.89285714285711"/>
+            <point key="canvasLocation" x="991" y="945"/>
         </scene>
         <!--Friends View Controller-->
         <scene sceneID="1Zv-gH-wlk">
@@ -313,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Fr-7k-yMS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1343.4782608695652" y="882.58928571428567"/>
+            <point key="canvasLocation" x="3403" y="945"/>
         </scene>
         <!--Friends SetVC-->
         <scene sceneID="FXY-Wo-3xq">
@@ -426,7 +426,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ltR-r4-wqE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1342.0289855072465" y="1600.4464285714284"/>
+            <point key="canvasLocation" x="3403" y="1740"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Uqs-A8-loK">
@@ -453,7 +453,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ieU-s8-5HS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2214" y="876"/>
+            <point key="canvasLocation" x="2212" y="945"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="P7L-Lq-BeX">
@@ -985,8 +985,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back44" translatesAutoresizingMaskIntoConstraints="NO" id="yir-bj-GI9">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKp-tk-JvC">
-                                <rect key="frame" x="180" y="513" width="54" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKp-tk-JvC">
+                                <rect key="frame" x="180" y="514" width="54" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="i6g-BJ-0DI"/>
                                 </constraints>
@@ -1032,6 +1032,7 @@
                             <constraint firstItem="Uyt-3h-D5R" firstAttribute="trailing" secondItem="V56-Mu-aOx" secondAttribute="trailing" constant="35" id="Khc-TN-pJr"/>
                             <constraint firstItem="Uyt-3h-D5R" firstAttribute="trailing" secondItem="yir-bj-GI9" secondAttribute="trailing" id="N7I-8x-5b7"/>
                             <constraint firstItem="n6y-KZ-P6S" firstAttribute="leading" secondItem="Uyt-3h-D5R" secondAttribute="leading" constant="35" id="Qkc-dW-Zg5"/>
+                            <constraint firstItem="cKp-tk-JvC" firstAttribute="top" secondItem="C8Q-jr-laF" secondAttribute="bottom" constant="25" id="bYS-N3-JIZ"/>
                             <constraint firstItem="cKp-tk-JvC" firstAttribute="centerX" secondItem="c3K-7J-dAB" secondAttribute="centerX" id="iOX-jc-nGT"/>
                             <constraint firstItem="V56-Mu-aOx" firstAttribute="top" secondItem="Uyt-3h-D5R" secondAttribute="top" constant="27" id="pmB-5D-pta"/>
                             <constraint firstItem="C8Q-jr-laF" firstAttribute="leading" secondItem="Uyt-3h-D5R" secondAttribute="leading" constant="35" id="qvh-yt-Faw"/>
@@ -1123,7 +1124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Yd-iZ-gp8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-907" y="1600"/>
+            <point key="canvasLocation" x="-30" y="1707"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="nFw-dh-jPf">
@@ -1162,7 +1163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Myi-ae-qVv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26" y="1600"/>
+            <point key="canvasLocation" x="990" y="1707"/>
         </scene>
         <!--Nav Ex View Controller-->
         <scene sceneID="clp-X1-COT">
