@@ -16,12 +16,16 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         userName.text = ""
         password.text = ""
+        self.hide()
 
     }
     
     @IBOutlet weak var userName: UITextField!
 
     @IBOutlet weak var password: UITextField!
+    func hide() {
+        password.isSecureTextEntry = true
+    }
     
     @IBAction func logIn(_ sender: Any) {
         let sv = UIViewController.displaySpinner(onView: self.view)

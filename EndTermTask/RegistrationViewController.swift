@@ -16,6 +16,7 @@ class RegistrationViewController: UIViewController {
         super.viewDidLoad()
         userNameReg.text = ""
         passwordReg.text = ""
+        self.hide()
         
     }
     
@@ -23,6 +24,9 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var userNameReg: UITextField!
     
     @IBOutlet weak var passwordReg: UITextField!
+    func hide() {
+           passwordReg.isSecureTextEntry = true
+       }
     
     
     @IBAction func signUp(_ sender: Any) {

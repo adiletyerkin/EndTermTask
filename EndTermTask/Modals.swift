@@ -9,6 +9,7 @@
 import Foundation
 
 
+
 class Character  : Decodable{
 //        var house : AnyObject?
         var name : String
@@ -29,18 +30,77 @@ var name : String?
 var slug : String?
 }
 
-struct MovieResponse: Decodable{
-    let results : [Movie]
-    
+
+
+class RootClass{
+
+var page : Int?
+var results : [Result]?
+var totalPages : Int?
+var totalResults : Int?
 }
 
-struct Movie: Decodable{
-    let id: Int
-    let title: String
-    let vote_average : Double
-    let overview : String
-    let release_date : String
-    let backdrop_path : String?
-    let poster_path : String?
+class Result : Decodable{
+
+var adult : Bool?
+var backdropPath : String?
+var genreIds : [Int]?
+var id : Int?
+var mediaType : String?
+var originalLanguage : String?
+var originalTitle : String?
+var overview : String?
+var popularity : Float?
+var posterPath : String?
+var releaseDate : String?
+var title : String?
+var video : Bool?
+var voteAverage : Float?
+var voteCount : Int?
     
+    var backdorURL : URL{
+        return URL(string: "https://image.tmdb.org/t/p/original/\(backdropPath ?? "")")!
+    }
+
+    var scoreText : String{
+        var ratingText: String{
+            let rating = Int(voteAverage ?? 0)
+            let ratingText = (0..<rating).reduce(""){
+                (acc, _) -> String in
+                return acc + "☆"
+            }
+        return ratingText
+        }
+
+        guard ratingText.count > 0 else {
+            return "n/a"
+        }
+        return ratingText + "\n \(ratingText.count)/10"
+    }
 }
+
+
+
+//class MovieResponse{
+//    var results : [Movie]?
+//
+//}
+//class Movie: Decodable{
+//    var id: Int
+//    var title: String
+//    var vote_average : Double
+//    var overview : String
+//    var release_date : String
+//    var backdrop_path : String?
+//    var poster_path : String?
+//
+//    var backdorURL : URL{
+//        return URL(string: "https://image.tmdb.org/t/p/original/\(backdrop_path ?? "")")!
+//    }
+//
+//    var ratingText: String{
+//        return String(vote_average)
+//    }
+//
+//}
+//
