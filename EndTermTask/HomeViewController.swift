@@ -13,8 +13,6 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func logOut(_ sender: Any) {
@@ -28,7 +26,7 @@ class HomeViewController: UIViewController {
                     if let descrip = error?.localizedDescription{
                         self.displayErrorMessage(message: (descrip))
                     }else{
-                        self.displayErrorMessage(message: "error logging out")
+                        self.displayErrorMessage(message: "errorr logging")
                     }
 
                 }
@@ -54,5 +52,6 @@ class HomeViewController: UIViewController {
     }
     
 
-
+    
+    
 }

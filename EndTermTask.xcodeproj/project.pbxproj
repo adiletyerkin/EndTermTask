@@ -17,7 +17,6 @@
 		DA2EBEE22582691100D207EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2EBEE02582691100D207EE /* Main.storyboard */; };
 		DA2EBEE42582691400D207EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2EBEE32582691400D207EE /* Assets.xcassets */; };
 		DA2EBEE72582691400D207EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2EBEE52582691400D207EE /* LaunchScreen.storyboard */; };
-		DA9A2875258CB13800ECBAF5 /* weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A2874258CB13800ECBAF5 /* weather.swift */; };
 		DA9A2877258CD96200ECBAF5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A2876258CD96200ECBAF5 /* LoginViewController.swift */; };
 		DA9A2879258CD9F600ECBAF5 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A2878258CD9F600ECBAF5 /* RegistrationViewController.swift */; };
 		DA9A287B258CDC0F00ECBAF5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A287A258CDC0F00ECBAF5 /* Extensions.swift */; };
@@ -46,7 +45,6 @@
 		DA2EBEE32582691400D207EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA2EBEE62582691400D207EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA2EBEE82582691400D207EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA9A2874258CB13800ECBAF5 /* weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather.swift; sourceTree = "<group>"; };
 		DA9A2876258CD96200ECBAF5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DA9A2878258CD9F600ECBAF5 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		DA9A287A258CDC0F00ECBAF5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				DA9A2878258CD9F600ECBAF5 /* RegistrationViewController.swift */,
 				DA2B9030258FFD2F00E97C8E /* DetailMovieViewController.swift */,
 				DA9A2876258CD96200ECBAF5 /* LoginViewController.swift */,
-				DA9A2874258CB13800ECBAF5 /* weather.swift */,
 				DA2EBEE02582691100D207EE /* Main.storyboard */,
 				DA9A287A258CDC0F00ECBAF5 /* Extensions.swift */,
 				DAD822C02583AD9D005688D9 /* DiaryViewController.swift */,
@@ -255,7 +252,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA9A2875258CB13800ECBAF5 /* weather.swift in Sources */,
 				DA2EBEDF2582691100D207EE /* ViewController.swift in Sources */,
 				DAD822C12583AD9D005688D9 /* DiaryViewController.swift in Sources */,
 				DAD822B92583A81A005688D9 /* Modals.swift in Sources */,

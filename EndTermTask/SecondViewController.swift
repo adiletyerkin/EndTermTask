@@ -11,6 +11,8 @@ import UIKit
 class SecondViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
 
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.seasonNum.count
     }
